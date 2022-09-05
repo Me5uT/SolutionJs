@@ -1,6 +1,6 @@
 {
   "name": "solutionjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NPM Package for some cases solutions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,8 +8,8 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
     "test": "jest --config jestconfig.json",
+    "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
