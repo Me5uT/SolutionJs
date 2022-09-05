@@ -1,42 +1,55 @@
 {
-  "name": "solutionjs",
-  "version": "1.0.7",
-  "description": "A NPM Package for some cases solutions",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "lib/**/*"
+    "dist",
+    "src"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" ",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Me5uT/SolutionJs.git"
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
   },
-  "keywords": [],
-  "author": "Mesut Çağa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Me5uT/SolutionJs/issues"
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
-  "homepage": "https://github.com/Me5uT/SolutionJs#readme",
+  "name": "solutionjs",
+  "author": "Me5uT",
+  "module": "dist/solutionjs.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/solutionjs.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/solutionjs.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "devDependencies": {
-    "@types/jest": "^29.0.0",
-    "eslint": "^8.23.0",
-    "jest": "^28.1.3",
-    "prettier": "^2.7.1",
-    "ts-jest": "^28.0.8",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "husky": "^8.0.1",
+    "size-limit": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
     "typescript": "^4.8.2"
   }
 }
