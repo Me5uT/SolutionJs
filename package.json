@@ -31,6 +31,7 @@
   "homepage": "https://github.com/Me5uT/SolutionJs#readme",
   "devDependencies": {
     "@types/jest": "^29.0.0",
+    "eslint": "^8.23.0",
     "jest": "^28.1.3",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.8",
