@@ -19,10 +19,10 @@ export class Solution {
 
   // Find the first non-consecutive number
   static firstNonConsecutive(numbers: number[]): number {
-    let result: number = numbers[0] | 0;
+    let result: number = numbers[0] || 0;
 
     for (let i = 0; i < numbers.length - 1; i++) {
-      if (numbers[i] + 1 != numbers[i + 1]) {
+      if (numbers[i] + 1 !== numbers[i + 1]) {
         result = numbers[i + 1];
         break;
       }
