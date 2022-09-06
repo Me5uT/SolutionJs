@@ -16,3 +16,5 @@ export * from './OppositeOfNumber';
 export * from './CapitalizeFirstCharacter';
 export * from './PerimeterOfRectangle';
 export * from './AreaOfCircle';
+export * from './HexToDecimal';
+export * from './GroupByFirstLetter';
