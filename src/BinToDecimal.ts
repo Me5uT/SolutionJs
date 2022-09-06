@@ -1,4 +1,4 @@
 export const binToDecimal = (bin: string): number => {
-  // Returns decimal of given bin
+  // Returns decimal value of bin
   return parseInt(bin, 2);
 };

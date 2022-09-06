@@ -14,3 +14,5 @@ export * from './MultiplyOfNumbers';
 export * from './SetAndSort';
 export * from './OppositeOfNumber';
 export * from './CapitalizeFirstCharacter';
+export * from './PerimeterOfRectangle';
+export * from './AreaOfCircle';

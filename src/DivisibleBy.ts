@@ -1,4 +1,4 @@
 export const divisibleBy = (numbers: number[], divisor: number): number[] => {
-  // Returns numbers which are divisible by given number in array
+  // Returns an array with divisible numbers by given number
   return numbers.filter((num: number) => num % divisor === 0);
 };

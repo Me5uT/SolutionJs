@@ -1,7 +1,7 @@
 import { squareOfNumber } from '../src';
 
 describe('squareOfNumber', () => {
-  it('find square of number', () => {
+  it('Returns square of given number', () => {
     expect(squareOfNumber(3)).toEqual(9);
   });
 });

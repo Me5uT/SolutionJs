@@ -1,7 +1,7 @@
 import { divisibleBy } from '../src';
 
 describe('divisibleBy', () => {
-  it('find numbers which are divisible by given number in array method works', () => {
+  it('Returns an array with divisible numbers by given number', () => {
     expect(divisibleBy([1, 2, 3, 4, 5, 6], 3)).toEqual([3, 6]);
   });
 });

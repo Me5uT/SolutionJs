@@ -2,6 +2,6 @@ export const sumOfTwoNumbers = (
   firstNumber: number,
   secondNumber: number
 ): number => {
-  // Returns sum of two numbers
+  // Returns sum of given two numbers
   return firstNumber + secondNumber;
 };
