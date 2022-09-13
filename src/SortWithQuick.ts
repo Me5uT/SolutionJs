@@ -1,7 +1,7 @@
 export const sortWithQuick = (numbers: number[]): number[] => {
   // Returns a sorted array with Quick Sort Method
 
-  if (numbers.length == 1) return numbers;
+  if (numbers.length === 1) return numbers;
 
   const pivot: number = numbers[numbers.length - 1];
   let leftArray: number[] = [];

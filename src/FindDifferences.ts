@@ -17,7 +17,7 @@ export const findDifferences = (
       sencondIndex++
     ) {
       // if numbers are same
-      if (firstArray[firstIndex] == secondArray[sencondIndex]) {
+      if (firstArray[firstIndex] === secondArray[sencondIndex]) {
         sameElements.push(firstArray[firstIndex]);
         isSameNumberFirstFlag = true;
         break;
@@ -35,7 +35,7 @@ export const findDifferences = (
 
     for (let j = 0; j < firstArray.length; j++) {
       // if numbers are same
-      if (firstArray[j] == secondArray[i]) {
+      if (firstArray[j] === secondArray[i]) {
         isSameNumberSecondFlag = true;
         break;
       }
