@@ -1,4 +1,4 @@
-export const sortWithBubble = (numbers: number[]) => {
+export const sortWithBubble = (numbers: number[]): number[] => {
   // Returns a sorted array with Bubble Sort Method
   for (let index = 0; index < numbers.length; index++) {
     let alreadySortedFlag: boolean = true;

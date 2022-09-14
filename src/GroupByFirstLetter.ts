@@ -1,10 +1,10 @@
-export const groupByFirstLetter = (str: string[]) => {
+export const groupByFirstLetter = (strings: string[]) => {
   // Returns an object grouped by first letter
   let obj: any = {};
 
-  str.forEach(
+  strings.forEach(
     (e: string) =>
-      (obj[e[0].toLowerCase() as keyof any] = str.filter(
+      (obj[e[0].toLowerCase() as keyof any] = strings.filter(
         (ele: string) => ele[0].toLowerCase() === e[0].toLowerCase()
       ))
   );

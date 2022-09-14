@@ -1,4 +1,4 @@
-export const areaOfCircle = (r: number): number => {
+export const areaOfCircle = (radius: number): number => {
   // Returns area of circle
-  return Number((Math.PI * r * r).toFixed(2));
+  return Number((Math.PI * radius * radius).toFixed(2));
 };

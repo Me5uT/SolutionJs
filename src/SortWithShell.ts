@@ -1,18 +1,18 @@
-export const sortWithShell = (arr: number[]) => {
+export const sortWithShell = (numbers: number[]): number[] => {
   // Returns a sorted array with Quick Sort Method
-  let length = arr.length;
+  let length = numbers.length;
 
   for (let gap = Math.floor(length / 2); gap > 0; gap = Math.floor(gap / 2)) {
     for (let i = gap; i < length; i += 1) {
-      let temp = arr[i];
+      let temp = numbers[i];
 
       let j;
 
-      for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
-        arr[j] = arr[j - gap];
+      for (j = i; j >= gap && numbers[j - gap] > temp; j -= gap)
+        numbers[j] = numbers[j - gap];
 
-      arr[j] = temp;
+      numbers[j] = temp;
     }
   }
-  return arr;
+  return numbers;
 };

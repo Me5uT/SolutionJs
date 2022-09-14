@@ -1,11 +1,11 @@
-export const findUnique = (numbers: any[]): any[] => {
+export const findUnique = (elements: any[]): any[] => {
   // Returns an array with unique elements of given array
 
   let uniqueNumbers: any[] = [];
 
-  uniqueNumbers.push(numbers[0]);
+  uniqueNumbers.push(elements[0]);
 
-  for (let firstIndex = 1; firstIndex < numbers.length; firstIndex++) {
+  for (let firstIndex = 1; firstIndex < elements.length; firstIndex++) {
     let isUnique: boolean = false;
 
     for (
@@ -13,7 +13,7 @@ export const findUnique = (numbers: any[]): any[] => {
       secondIndex < uniqueNumbers.length;
       secondIndex++
     ) {
-      if (numbers[firstIndex] !== uniqueNumbers[secondIndex]) {
+      if (elements[firstIndex] !== uniqueNumbers[secondIndex]) {
         isUnique = true;
       } else {
         isUnique = false;
@@ -21,7 +21,7 @@ export const findUnique = (numbers: any[]): any[] => {
       }
     }
 
-    if (isUnique) uniqueNumbers.push(numbers[firstIndex]);
+    if (isUnique) uniqueNumbers.push(elements[firstIndex]);
   }
 
   return uniqueNumbers;

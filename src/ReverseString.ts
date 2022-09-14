@@ -1,4 +1,4 @@
-export const reverseString = (str: string) => {
+export const reverseString = (str: string): string => {
   // Returns a string, reserved of given string
   let reversedString: string = '';
 

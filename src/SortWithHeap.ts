@@ -19,22 +19,22 @@ const heapify = (arr: number[], length: number, i: number) => {
   return arr;
 };
 
-export const sortWithHeap = (arr: number[]) => {
+export const sortWithHeap = (numbers: number[]): number[] => {
   // Returns a sorted array with Heap Sort Method
-  const length = arr.length;
+  const length = numbers.length;
   let i = Math.floor(length / 2 - 1);
   let k = length - 1;
 
   while (i >= 0) {
-    heapify(arr, length, i);
+    heapify(numbers, length, i);
     i--;
   }
 
   while (k >= 0) {
-    [arr[0], arr[k]] = [arr[k], arr[0]];
-    heapify(arr, k, 0);
+    [numbers[0], numbers[k]] = [numbers[k], numbers[0]];
+    heapify(numbers, k, 0);
     k--;
   }
 
-  return arr;
+  return numbers;
 };
