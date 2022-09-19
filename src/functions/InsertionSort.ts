@@ -1,5 +1,9 @@
 export const insertionSort = (numbers: number[]): number[] => {
-  // Returns a sorted array with Insertion Sort Method
+  /**
+   *  Returns a sorted array with Insertion Sort Method.
+   * @param numbers An array with numbers in it.
+   */
+
   let j;
 
   for (let i = 1; i < numbers.length; i++) {

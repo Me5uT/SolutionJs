@@ -1,5 +1,9 @@
 export const capitalizeFirstCharacter = (word: string): string => {
-  // Returns words, first letters capitalized
+  /**
+   * Returns words, first letters capitalized.
+   * @param word a string.
+   */
+
   const lowerCaseWord = word.toLowerCase();
   if (lowerCaseWord.split(' ').length > 1) {
     return lowerCaseWord

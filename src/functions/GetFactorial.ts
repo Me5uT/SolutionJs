@@ -1,5 +1,9 @@
 export const getFactorial = (num: number): number => {
-  // Returns factorial value of given number
+  /**
+   * Returns factorial value of given number.
+   * @param num A number whose factorial value is desired to be calculated.
+   */
+
   switch (true) {
     case num > 1: {
       let total: number = 1;

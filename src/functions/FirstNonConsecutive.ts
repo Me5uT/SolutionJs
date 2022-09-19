@@ -1,5 +1,9 @@
 export const firstNonConsecutive = (numbers: number[]): null | number => {
-  // Returns first non consecutive number or null
+  /**
+   * Returns first non consecutive number or null.
+   * @param numbers An array with numbers in it.
+   */
+
   let result: number | null = null;
 
   for (let i = 0; i < numbers.length - 1; i++) {

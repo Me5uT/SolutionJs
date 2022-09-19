@@ -43,7 +43,7 @@ console.log('Result = ', twoPlusFour); // Result = 6
         </tr>
         <tr>
             <td>binToDecimal</td>
-            <td>'Returns decimal value of bin'</td>
+            <td>'Returns decimal value of given bin value'</td>
             <td>number</td>
             <td>bin : string</td>
         </tr>
@@ -55,7 +55,7 @@ console.log('Result = ', twoPlusFour); // Result = 6
         </tr>
          <tr>
             <td>celciusToFahreneit</td>
-            <td>'Return fahreneit value'</td>
+            <td>'Returns fahreneit value'</td>
             <td>number</td>
             <td>celcius : number</td>
         </tr>

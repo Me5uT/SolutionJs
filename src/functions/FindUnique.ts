@@ -1,5 +1,8 @@
 export const findUnique = (elements: any[]): any[] => {
-  // Returns an array with unique elements of given array
+  /**
+   * Returns an array with unique elements of given array.
+   * @param elements An array with any type.
+   */
 
   let uniqueNumbers: any[] = [];
 

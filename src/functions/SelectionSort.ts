@@ -1,5 +1,8 @@
 export const selectionSort = (numbers: number[]): number[] => {
-  // Returns a sorted array with Selection Sort Method
+  /**
+   *  Returns a sorted array with Selection Sort Method.
+   * @param numbers An array with numbers in it.
+   */
 
   for (let firstIndex = 0; firstIndex < numbers.length; firstIndex++) {
     let lowestNumberIndex = firstIndex;

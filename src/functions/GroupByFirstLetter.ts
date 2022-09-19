@@ -1,5 +1,9 @@
 export const groupByFirstLetter = (strings: string[]) => {
-  // Returns an object grouped by first letter
+  /**
+   * Returns an object grouped by first letter.
+   * @param strings An array with in strings.
+   */
+
   let obj: any = {};
 
   strings.forEach(

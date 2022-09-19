@@ -2,7 +2,11 @@ export const findDifferences = (
   firstArray: any[],
   secondArray: any[]
 ): [any[], any[], any[]] => {
-  // Returns an array with [ inJustFirstArray, sameElements, inJustSecondArray ]
+  /**
+   *  Returns an array with [ inJustFirstArray, sameElements, inJustSecondArray ]
+   * @param firstArray An array.
+   * @param secondArray An array
+   */
 
   let sameElements: any[] = [];
   let inJustFirstArray: any[] = [];

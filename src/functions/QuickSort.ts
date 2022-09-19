@@ -1,5 +1,8 @@
 export const quickSort = (numbers: number[]): number[] => {
-  // Returns a sorted array with Quick Sort Method
+  /**
+   *  Returns a sorted array with Quick Sort Method.
+   * @param numbers An array with numbers in it.
+   */
 
   if (numbers.length === 1) return numbers;
 

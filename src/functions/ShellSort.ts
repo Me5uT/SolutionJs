@@ -1,5 +1,9 @@
 export const shellSort = (numbers: number[]): number[] => {
-  // Returns a sorted array with Quick Sort Method
+  /**
+   *  Returns a sorted array with Quick Sort Method.
+   * @param numbers An array with numbers in it.
+   */
+
   let length = numbers.length;
 
   for (let gap = Math.floor(length / 2); gap > 0; gap = Math.floor(gap / 2)) {

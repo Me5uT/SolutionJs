@@ -20,7 +20,11 @@ const heapify = (arr: number[], length: number, i: number) => {
 };
 
 export const heapSort = (numbers: number[]): number[] => {
-  // Returns a sorted array with Heap Sort Method
+  /**
+   *  Returns a sorted array with Heap Sort Method.
+   * @param numbers An array with numbers in it.
+   */
+
   const length = numbers.length;
   let i = Math.floor(length / 2 - 1);
   let k = length - 1;

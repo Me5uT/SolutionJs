@@ -1,7 +1,7 @@
 import { celciusToFahreneit } from '../src';
 
 describe('celciusToFahreneit', () => {
-  it('Return fahreneit value', () => {
+  it('Returns fahreneit value', () => {
     expect(celciusToFahreneit(100)).toEqual(212);
   });
 });

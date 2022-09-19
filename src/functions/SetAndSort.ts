@@ -2,7 +2,12 @@ export const setAndSort = (
   arrayOne: number[],
   arrayTwo: number[]
 ): number[] => {
-  // Returns an array of set and sorted given arrays
+  /**
+   *  Returns an array of set and sorted given arrays.
+   * @param arrayOne An array with numbers in it.
+   * @param arrayTwo An array with numbers in it.
+   */
+
   const allNumbers: number[] = [...arrayOne, ...arrayTwo];
 
   return allNumbers
