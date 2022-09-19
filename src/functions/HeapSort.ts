@@ -19,7 +19,7 @@ const heapify = (arr: number[], length: number, i: number) => {
   return arr;
 };
 
-export const sortWithHeap = (numbers: number[]): number[] => {
+export const heapSort = (numbers: number[]): number[] => {
   // Returns a sorted array with Heap Sort Method
   const length = numbers.length;
   let i = Math.floor(length / 2 - 1);

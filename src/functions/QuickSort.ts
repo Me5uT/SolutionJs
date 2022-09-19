@@ -1,4 +1,4 @@
-export const sortWithQuick = (numbers: number[]): number[] => {
+export const quickSort = (numbers: number[]): number[] => {
   // Returns a sorted array with Quick Sort Method
 
   if (numbers.length === 1) return numbers;
@@ -16,10 +16,10 @@ export const sortWithQuick = (numbers: number[]): number[] => {
   }
 
   if (leftArray.length > 0 && rightArray.length > 0) {
-    return [...sortWithQuick(leftArray), pivot, ...sortWithQuick(rightArray)];
+    return [...quickSort(leftArray), pivot, ...quickSort(rightArray)];
   } else if (leftArray.length > 0) {
-    return [...sortWithQuick(leftArray), pivot];
+    return [...quickSort(leftArray), pivot];
   } else {
-    return [pivot, ...sortWithQuick(rightArray)];
+    return [pivot, ...quickSort(rightArray)];
   }
 };

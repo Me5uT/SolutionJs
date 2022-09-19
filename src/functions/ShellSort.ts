@@ -1,4 +1,4 @@
-export const sortWithShell = (numbers: number[]): number[] => {
+export const shellSort = (numbers: number[]): number[] => {
   // Returns a sorted array with Quick Sort Method
   let length = numbers.length;
 

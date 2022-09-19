@@ -1,4 +1,4 @@
-export const sortWithInsertion = (numbers: number[]): number[] => {
+export const insertionSort = (numbers: number[]): number[] => {
   // Returns a sorted array with Insertion Sort Method
   let j;
 

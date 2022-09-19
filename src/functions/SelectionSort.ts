@@ -1,4 +1,4 @@
-export const sortWithSelection = (numbers: number[]): number[] => {
+export const selectionSort = (numbers: number[]): number[] => {
   // Returns a sorted array with Selection Sort Method
 
   for (let firstIndex = 0; firstIndex < numbers.length; firstIndex++) {

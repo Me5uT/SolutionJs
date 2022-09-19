@@ -181,37 +181,37 @@ console.log('Result = ', twoPlusFour); // Result = 6
             <td>arrayOne: number[], arrayTwo: number[]</td>
         </tr>
         <tr>
-            <td>sortWithBubble</td>
+            <td>bubbleSort</td>
             <td>'Returns a sorted array with Bubble Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
         </tr>
         <tr>
-            <td>sortWithHeap</td>
+            <td>heapSort</td>
             <td>'Returns a sorted array with Heap Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
         </tr>
         <tr>
-            <td>sortWithInsertion</td>
+            <td>insertionSort</td>
             <td>'Returns a sorted array with Insertion Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
         </tr>
         <tr>
-            <td>sortWithQuick</td>
+            <td>quickSort</td>
             <td>'Returns a sorted array with Quick Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
         </tr>
         <tr>
-            <td>sortWithSelection</td>
+            <td>selectionSort</td>
             <td>'Returns a sorted array with Selection Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
         </tr>
         <tr>
-            <td>sortWithShell</td>
+            <td>shellSort</td>
             <td>'Returns a sorted array with Shell Sort Method'</td>
             <td> number[] </td>
             <td>numbers: number[]</td>
