@@ -1,6 +1,6 @@
 ### SolutionJS
 
-This package is that contains a small part of the solutions to the cases solved by the junior frontend developer in order to develop it himself. I will add more solutions as soon as possibly.
+This package is that contains a small part of the solutions to the cases solved by a junior frontend developer in order to develop it himself. I will add more solutions as soon as possibly.
 
 ## Installation
 
